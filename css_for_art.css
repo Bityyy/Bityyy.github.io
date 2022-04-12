@@ -1,0 +1,143 @@
+/* art1 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maingraph{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: rgb(243, 243, 243);
+    -webkit-animation: scaleout 0.6s infinite ease-in;
+    animation: scaleout 0.6s infinite ease-in;
+    animation-iteration-count:1;
+}
+
+@-webkit-keyframes scaleout {
+    100% { -webkit-transform: scale(1.0) }
+    0% {
+      -webkit-transform: scale(1.0);
+      opacity: 0;
+    }
+}
+
+@keyframes scaleout {
+    100% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    } 
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+.topbox{
+    position: absolute;
+    top: 25px;
+    left: -40px;
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    text-align: center;
+}
+
+.topbox a{
+    cursor: pointer;
+}
+
+.topbox:hover .hide{
+    display: inline-block;
+    -webkit-animation: scaleout 0.3s infinite ease-in;
+    animation: scaleout 0.3s infinite ease-in;
+    animation-iteration-count:1;
+}
+
+.topbox .hide{
+    display: none;
+}
+
+.button_last{
+    position: absolute;
+    top: 350px;
+    left: -40px;
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    text-align: center;
+    line-height: 120px;
+}
+
+.button_last a{
+    cursor: pointer;
+}
+
+.button_last:hover .hide{
+    display: inline-block;
+    -webkit-animation: scaleout 0.3s infinite ease-in;
+    animation: scaleout 0.3s infinite ease-in;
+    animation-iteration-count:1;
+}
+
+.button_last .hide{
+    width: 70px;
+    height: 90px;
+    background-color: rgb(102, 102, 102);
+    opacity: 0.7;
+    display: none;
+}
+
+.button_next{
+    position: absolute;
+    top: 350px;
+    right: -40px;
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    text-align: center;
+    line-height: 120px;
+}
+
+.button_next a{
+    cursor: pointer;
+}
+
+.button_next:hover .hide{
+    display: inline-block;
+    -webkit-animation: scaleout 0.3s infinite ease-in;
+    animation: scaleout 0.3s infinite ease-in;
+    animation-iteration-count:1;
+}
+
+.button_next .hide{
+    width: 70px;
+    height: 90px;
+    background-color: rgb(102, 102, 102);
+    opacity: 0.7;
+    display: none;
+}
+
+.title{
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    -webkit-animation: scaleout 1s infinite ease-in;
+    animation: scaleout 1s infinite ease-in;
+    animation-iteration-count:1;
+}
+
+.content{
+    margin: auto;
+    width: 70%;
+    height: 260px;
+    font-size: 20;
+    -webkit-animation: scaleout 1s infinite ease-in;
+    animation: scaleout 1s infinite ease-in;
+    animation-iteration-count:1;
+}
